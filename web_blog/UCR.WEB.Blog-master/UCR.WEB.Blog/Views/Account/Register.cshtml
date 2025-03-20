@@ -1,0 +1,57 @@
+﻿@model UCR.WEB.Blog.ViewModels.UserVM;
+
+<div class="container mt-5">
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-6 col-lg-4">
+            <form asp-controller="Account" asp-action="Register" method="post">
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Nombre Completo</label>
+                    <input class="form-control" type="text" id="Name" placeholder="Ingrese su nombre completo" required
+                        asp-for="Name" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Correo Electrónico</label>
+                    <input class="form-control" type="email" id="Email" placeholder="Ingrese su correo electrónico"
+                        required asp-for="Email" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="Password" class="form-label">Contraseña</label>
+                    <input class="form-control" type="password" id="Password" placeholder="Ingrese su contraseña"
+                        required asp-for="Password" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="ConfirmationKey" class="form-label">Confirmar Contraseña</label>
+                    <input class="form-control" type="password" id="ConfirmationKey"
+                        placeholder="Confirme su contraseña" required asp-for="ConfirmationKey" />
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit">Registrar</button>
+                    <a href="/Account/Login" class="btn btn-link text-center">¿Ya tienes cuenta? Inicia sesión</a>
+                </div>
+
+                @if (ViewData["Error"] != null)
+                {
+                <div id="errorAlert" class="alert alert-danger position-fixed top-5 end-0 m-3" role="alert"
+                    style="top: 250px; right: 40px; z-index: 1000;">
+                        @ViewData["Error"]
+                </div>
+
+                <script>
+                    setTimeout(function () {
+                        const alert = document.getElementById('errorAlert');
+                        if (alert) {
+                            alert.style.transition = 'opacity 0.5s';
+                            alert.style.opacity = '0';
+                            setTimeout(() => alert.remove(), 500);
+                        }
+                    }, 2000); 
+                </script>
+                }
+            </form>
+        </div>
+    </div>
+</div>

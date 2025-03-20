@@ -1,0 +1,76 @@
+@model UCR.WEB.Blog.Models.Post
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class="bg-light p-5 rounded-3 shadow-lg">
+
+                @if (Model.ImageDataUrl != null)
+                {
+                    <div class="text-center mb-4">
+                        <img src="@Model.ImageDataUrl" alt="Imagen del Post" class="img-fluid rounded"
+                            style="max-width: 100%; height: auto;" />
+                    </div>
+                }
+
+                <dl class="row mb-4">
+                    <dt class="col-sm-3 font-weight-bold text-secondary">
+                        @Html.DisplayNameFor(model => model.Id)
+                    </dt>
+                    <dd class="col-sm-9 text-break">
+                        <strong class="text-dark">@Html.DisplayFor(model => model.Id)</strong>
+                    </dd>
+                    <dt class="col-sm-3 font-weight-bold text-secondary">
+                        @Html.DisplayNameFor(model => model.Title)
+                    </dt>
+                    <dd class="col-sm-9 text-break">
+                        <strong class="text-dark">@Html.DisplayFor(model => model.Title)</strong>
+                    </dd>
+
+                    <dt class="col-sm-3 font-weight-bold text-secondary">
+                        @Html.DisplayNameFor(model => model.Body)
+                    </dt>
+                    <dd class="col-sm-9 text-break">
+                        <p class="text-muted">@Html.DisplayFor(model => model.Body)</p>
+                    </dd>
+
+                    <dt class="col-sm-3 font-weight-bold text-secondary">
+                        @Html.DisplayNameFor(model => model.UserId)
+                    </dt>
+                    <dd class="col-sm-9 text-break">
+                        <span class="badge bg-info">@Html.DisplayFor(model => model.UserId)</span>
+                    </dd>
+                    <dt class="col-sm-3 font-weight-bold text-secondary">
+                        @Html.DisplayNameFor(model => model.Category)
+                    </dt>
+                    <dd class="col-sm-9 text-break">
+                        <span class="badge bg-info">@Html.DisplayFor(model => model.Category)</span>
+                    </dd>
+                </dl>
+
+                <hr class="my-4">
+                @if (Model.Comments.Any())
+                {
+                    <div class="mb-4">
+                        <h5 class="text-primary">Comentarios</h5>
+                        @foreach (var comment in Model.Comments)
+                        {
+                            <div>
+                                <p>@comment.Text</p>
+                            </div>
+                        }
+                    </div>
+                }
+
+                <div class="text-center mt-5">
+                    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary mx-3 px-5 py-3">
+                        Editar Post
+                    </a>
+                    <a asp-action="Index" class="btn btn-secondary mx-3 px-5 py-3">
+                        Volver a la lista
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

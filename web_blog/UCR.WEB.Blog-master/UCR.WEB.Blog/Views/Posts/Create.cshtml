@@ -1,0 +1,34 @@
+@model UCR.WEB.Blog.Models.Post
+@using System.Security.Claims
+
+<div class="container my-5">
+    <div class="bg-light p-4 rounded shadow-sm">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="UserId" type="hidden" class="form-control" value="@User.Identity.Name" />
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Body" class="control-label"></label>
+                <textarea asp-for="Body" class="form-control"></textarea>
+                <span asp-validation-for="Body" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                <input asp-for="Category" class="form-control" />
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="ImageData" class="control-label">Imagen</label>
+                <input type="file" name="ImageData" class="form-control" />
+                <span asp-validation-for="ImageData" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Crear Publicación" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
