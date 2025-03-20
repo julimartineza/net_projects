@@ -1,0 +1,23 @@
+{
+    "name": "UCR.ECCI.PI.frontend.Infrastructure",
+    "rootNamespace": "UCR.ECCI.PI.frontend.Unity.Infrastructure",
+    "references": [
+        "GUID:921d785528f0a2649972b2da22636171",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:4b84427fd7ace4b4cb623ef8a46124ed"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [
+        "Microsoft.Kiota.Bundle.dll",
+        "Microsoft.Kiota.Abstractions.dll",
+        "Microsoft.Kiota.Http.HttpClientLibrary.dll",
+        "unityplastic.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}

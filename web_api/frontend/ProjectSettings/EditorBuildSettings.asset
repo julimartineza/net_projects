@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/EcciTinocoMap.unity
+    guid: 82c8c8a187079483b818973a88113e05
+  - enabled: 1
+    path: Assets/Scenes/LobbyAnexo.unity
+    guid: c033a1cedf2d0bf40b2b02168bd63e55
+  - enabled: 1
+    path: Assets/Scenes/4-6.unity
+    guid: d237dd40f8c49d642b2a061b8c35e799
+  - enabled: 0
+    path: Assets/Scenes/4-6 mp.unity
+    guid: 3fbe7eeb2b1fabe44903a84f117a66b8
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
+  m_UseUCBPForAssetBundles: 0

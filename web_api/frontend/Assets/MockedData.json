@@ -1,0 +1,130 @@
+{
+    "buildings": [
+        {
+            "id": 1,
+            "name": "ECCI",
+            "position": {
+                "x": 263.3,
+                "y": 3.25,
+                "z": 143.4
+            },
+            "rotation": {
+                "x": 0,
+                "y": -18.138,
+                "z": 0
+            },
+            "scale": {
+                "x": 26.06145,
+                "y": 5,
+                "z": 20.85607
+            },
+            "texture": "por definir",
+            "info": "Este es el edificio escuela de ciencias de la computaci?n"
+        },
+        {
+            "id": 2,
+            "name": "Anexo",
+            "position": {
+                "x": 318.7,
+                "y": 3.25,
+                "z": 162
+            },
+            "rotation": {
+                "x": 0,
+                "y": -23.946,
+                "z": 0
+            },
+            "scale": {
+                "x": 13.50985,
+                "y": 20,
+                "z": 36.44219
+            },
+            "texture": "por definir",
+            "info": "Este es el edificio de Anexo que es el edificio nuevo de la escuela de ciencias de la computaci?n"
+        },
+        {
+            "id": 3,
+            "name": "Comedor",
+            "position": {
+                "x": 386.2,
+                "y": 3.25,
+                "z": 238.9
+            },
+            "rotation": {
+                "x": 0,
+                "y": -15.35,
+                "z": 0
+            },
+            "scale": {
+                "x": 37.38466,
+                "y": 30,
+                "z": 43.71969
+            },
+            "texture": "por definir",
+            "info": "Este es el edificio de Comedor"
+        },
+        {
+            "id": 4,
+            "name": "CentroInformatica",
+            "position": {
+                "x": 285.2367,
+                "y": 3.25,
+                "z": 175.316
+            },
+            "rotation": {
+                "x": 0,
+                "y": -21.591,
+                "z": 0
+            },
+            "scale": {
+                "x": 29.64957,
+                "y": 25,
+                "z": 25.5282
+            },
+            "texture": "por definir",
+            "info": "Este es el edificio de Centro de Inform?tica"
+        },
+        {
+            "id": 5,
+            "name": "Geologia",
+            "position": {
+                "x": 296.2,
+                "y": 3.25,
+                "z": 132.5
+            },
+            "rotation": {
+                "x": 0,
+                "y": -21.732,
+                "z": 0
+            },
+            "scale": {
+                "x": 26.13709,
+                "y": 15,
+                "z": 19.14519
+            },
+            "texture": "por definir",
+            "info": "Este es el edificio de la escuela de Geolog?a"
+        },
+        {
+            "id": 6,
+            "name": "Tinoco",
+            "position": {
+                "x": 347.3,
+                "y": 3.25,
+                "z": 375
+            },
+            "rotation": {
+                "x": 0,
+                "y": 9.392,
+                "z": 0
+            },
+            "scale": {
+                "x": 20.14297,
+                "y": 10,
+                "z": 49.18465
+            },
+            "texture": "por definir",
+            "info": "Este es el edificio de la biblioteca Luis Demetrio Tinoco"
+        }
+    ]
+}

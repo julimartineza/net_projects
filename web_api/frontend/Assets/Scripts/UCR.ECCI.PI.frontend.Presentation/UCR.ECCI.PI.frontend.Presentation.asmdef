@@ -1,0 +1,24 @@
+{
+    "name": "UCR.ECCI.PI.frontend.Presentation",
+    "rootNamespace": "UCR.ECCI.PI.frontend.Unity.Presentation",
+    "references": [
+        "UCR.ECCI.PI.frontend.Application",
+        "UCR.ECCI.PI.frontend.Domain",
+        "UCR.ECCI.PI.frontend.DependencyInjection",
+        "Unity.TextMeshPro",
+        "Unity.Netcode.Runtime",
+        "Unity.InputSystem",
+        "Unity.Networking.Transport",
+        "UnityEngine.TestRunner",
+        "Zenject"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
