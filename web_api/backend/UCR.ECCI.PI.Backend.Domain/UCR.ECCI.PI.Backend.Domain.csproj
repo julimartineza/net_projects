@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Buildings\Entities\Buildings.cs" />
+		<Compile Remove="Buildings\ValueObjects\DecimalObject.cs" />
+		<Compile Remove="Buildings\ValueObjects\Type.cs" />
+		<Compile Remove="Unit\Entities\Unit.cs" />
+		<Compile Remove="Unit\ValueObjects\Id.cs" />
+		<Compile Remove="Unit\ValueObjects\Supervises.cs" />
+		<Compile Remove="Unit\ValueObjects\UnitType.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Buildings\Entities\Building" />
+	  <None Remove="Buildings\Entities\NewFile1.txt" />
+	  <None Remove="Buildings\Repositories\NewFile1.txt" />
+	  <None Remove="Buildings\ValueObjects\3DVector" />
+	  <None Remove="Buildings\ValueObjects\Coordinate" />
+	  <None Remove="Buildings\ValueObjects\NewFile1.txt" />
+	  <None Remove="Unit\Entities\NewFile1.txt" />
+	  <None Remove="Unit\Records\NewFile1.txt" />
+	  <None Remove="Unit\Repositories\AdministrativeUnit" />
+	  <None Remove="Unit\Repositories\NewFile1.txt" />
+	  <None Remove="Unit\ValueObjects\NewFile1.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="9.32.0.97167">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Trees\ValueObjects\" />
+	</ItemGroup>
+
+</Project>

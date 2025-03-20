@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Unit\Responses\**" />
+	  <EmbeddedResource Remove="Unit\Responses\**" />
+	  <None Remove="Unit\Responses\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Buildings\Endpoints\BuildingServices.cs" />
+	  <Compile Remove="Unit\Handlers\ChangeAdministrativeUnitStatusHandker.cs" />
+	  <Compile Remove="Unit\Handlers\ListPhysicalUnitHandler.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Unit\Endpoints\NewFile1.txt" />
+	  <None Remove="Unit\Handlers\NewFile1.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+		<PackageReference Include="Riok.Mapperly" Version="4.1.0" />
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="9.32.0.97167">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\UCR.ECCI.PI.Backend.Application\UCR.ECCI.PI.Backend.Application.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="7c528f86-be89-4608-8982-1119508a1d6b" ChangeDateTime="10/16/2024 00:25:35">
+    <Property Name="ElementName" Value="[dbo].[Unit].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Unit]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3eadd538-6787-487c-8f22-5945b2afd487" ChangeDateTime="10/16/2024 00:55:10">
+    <Property Name="ElementName" Value="[dbo].[AdministrativeUnit].[Supervises]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AdministrativeUnit]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Supervised" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="82fdf749-3c5e-4f99-bd74-7bfee7ecf082" ChangeDateTime="10/19/2024 05:01:06">
+    <Property Name="ElementName" Value="[dbo].[PhysicalUnit].[Type]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PhysicalUnit]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PhysicalUnitType" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="74104a46-f54e-44ec-9598-e3c79d486349" ChangeDateTime="10/19/2024 23:23:21">
+    <Property Name="ElementName" Value="[dbo].[AdministrativeUnit].[Type]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AdministrativeUnit]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AdministrativeUnitType" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="df357e0e-93b5-44ff-8104-9d52c6ceeb57" ChangeDateTime="10/20/2024 18:52:52">
+    <Property Name="ElementName" Value="[dbo].[AdministrativeUnitLocatedIn].[LocatedIn]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AdministrativeUnitLocatedIn]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BuildingId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cda53df3-b68f-43b4-9a1c-f35eba618159" ChangeDateTime="10/21/2024 20:20:48">
+    <Property Name="ElementName" Value="[dbo].[LearningSpace].[BuildingID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LearningSpace]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BuildingName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b228437e-bbea-4e07-82e8-e2c3ad4b09bd" ChangeDateTime="10/21/2024 20:56:42">
+    <Property Name="ElementName" Value="[dbo].[LearningSpace].[BuildingName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LearningSpace]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BuildingId" />
+  </Operation>
+</Operations>

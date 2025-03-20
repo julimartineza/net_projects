@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="EntityUnit\AdministrativeUnitEntityConfiguration\**" />
+	  <EmbeddedResource Remove="EntityUnit\AdministrativeUnitEntityConfiguration\**" />
+	  <None Remove="EntityUnit\AdministrativeUnitEntityConfiguration\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="EntityUnit\Repositories\AdministrativeUnityRepository.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="EntityBuilding\Repositories\NewFile1.txt" />
+	  <None Remove="EntityUnit\EntityConfigurations\NewFile1.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="9.32.0.97167">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\UCR.ECCI.PI.Backend.Domain\UCR.ECCI.PI.Backend.Domain.csproj" />
+	</ItemGroup>
+
+</Project>
